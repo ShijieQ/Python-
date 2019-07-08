@@ -1,6 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\ShijieQAQ\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe"
-    
-    // C:/Users/ShijieQAQ/AppData/Local/Programs/Python/Python36-32
-    // C:\\Users\\ShijieQAQ\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe
+    "python.pythonPath": "C:\\Python\\Python3.7.3\\python.exe"
+    //"python.pythonPath": "C:\\Python\\Python3.7.3\\python.exe"
 }

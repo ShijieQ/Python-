@@ -3,7 +3,7 @@
 # created 2019-06-16T18:30:07.950Z+08:00
 
 import math
-import system
+import sys
 
 while True:
     n = input()
