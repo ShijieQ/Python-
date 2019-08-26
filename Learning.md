@@ -9,20 +9,26 @@
 
 ## Grammar
 
-- """*str*""" : *Keep string as it is including newlines, escape characters.*
-    ```py
-    # For example:
-    >>> a = """this is first line,
-        this is second line.\n\n"""
-    >>> print(a)
-    this is first line,
-    this is second line.\n\n
-    ```
-- r"*str*"&nbsp; : &emsp;*Automatically skip escape characters.*
-- a ** b : &emsp;*It means $a^{b}$.*
-- a // b : &emsp;*It means $\lfloor\frac{a}{b}\rfloor$ and keep the original type like 2.5 // 2 == 1.0.*
-- `else if` in C++ is equal to `elif` in Python.
-- `x if x < y else y` is a Ternary Operator. It has the same function with `x < y ? x : y` in C++ language.
+- About *String* :
+  - """*str*""" : *Keep string as it is including newlines, escape characters.*
+      ```py
+      # For example:
+      >>> a = """this is first line,
+          this is second line.\n\n"""
+      >>> print(a)
+      this is first line,
+      this is second line.\n\n
+      ```
+  - r"*str*"&nbsp; : &emsp;*Automatically skip escape characters.*
+- About *Operation* :
+  - a ** b : &emsp;*It means $a^{b}$.*
+  - a // b : &emsp;*It means $\lfloor\frac{a}{b}\rfloor$ and keep the original type like 2.5 // 2 == 1.0.*
+- About different with other language :
+  - `else if` in C++ is equal to `elif` in Python.
+  - `x if x < y else y` is a Ternary Operator. It has the same function with `x < y ? x : y` in C++ language.
+- About list : a = [ ]
+  - a[[start=0]:[end=len]] : *Gets a sublist of the index from start to end-1. It is used to get a copy.*
+  - a * **constant** : *Gets a list of **constant** times the length and **constant** times the content.*
 
 
 ## Function
@@ -37,7 +43,7 @@
     ```
 - About List : a = [ ]
   - append(*element*) : *Adds an element to the end of list. The length of the list will increase by one.*
-  - extend(*list*) : *Adds all element of another list to the end of list. The length of the list will increase by the length of another list.*
+  - extend(*list*) : *Adds all elements of another list to the end of the list. The length of the list will increase by the length of another list. By the way, `(list1 + list2) == list1.extend(list2)`*
   - insert(*index, element*) : *Adds an element to the position of index in list.*
     ```py
     # For example:
@@ -57,7 +63,9 @@
     ```
   - remove(*element*) : *Takes a single element as an argument and removes it from list. If this element does not exist, valueRrror exception is thrown.*
   - **del** *object/variable/list[index]* : **del** *can be used to delete an object, a variable and an element in a list.*
-  - pop([index=len-1]) : *Removes the element at the given index from the list.*
+  - pop([index=len-1]) : *Removes the element at the given index from the list. The default index is len-1.*
+  - count(*element*) : *Get the number of occurrences of an element in a list.*
+  - index(*element*, [start=0], [end=len]) : *Get the index of element between the start and the end-1 in a list.*
 
 ## Tips
 - The operator '`-`' has a lower priority than the operator '`**`'. For example, -3 ** 2 == -9.
