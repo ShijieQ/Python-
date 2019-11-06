@@ -13,16 +13,16 @@
   - """*str*""" : *Keep string as it is including newlines, escape characters.*
       ```py
       # For example:
-      >>> a = """this is first line,
-          this is second line.\n\n"""
-      >>> print(a)
+      # >>> a = """this is first line,
+      #     this is second line.\n\n"""
+      # >>> print(a)
       this is first line,
       this is second line.\n\n
       ```
-  - r"*str*"&nbsp; : &emsp;*Automatically skip escape characters.*
+  - r"*str*"&nbsp; : *Automatically skip escape characters.*
 - About *Operation* :
-  - a ** b : &emsp;*It means $a^{b}$.*
-  - a // b : &emsp;*It means $\lfloor\frac{a}{b}\rfloor$ and keep the original type like 2.5 // 2 == 1.0.*
+  - a ** b : *It means $a^{b}$.*
+  - a // b : *It means $\lfloor\frac{a}{b}\rfloor$ and keep the original type like 2.5 // 2 == 1.0.*
 - About different with other language :
   - `else if` in C++ is equal to `elif` in Python.
   - `x if x < y else y` is a Ternary Operator. It has the same function with `x < y ? x : y` in C++ language.
